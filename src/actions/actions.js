@@ -5,3 +5,10 @@ export const simpleAction = () => dispatch => {
     })
 }
 
+export const initPorfolioData = (data) => dispatch => {
+    dispatch({
+        type: 'PORTFOLIO_DATA',
+        payload: data
+    })
+}
+

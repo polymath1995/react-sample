@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import configureStore from './store';
-import './index.scss';
 import App from './App';
 import DetailPage from './containers/detailPage';
 import * as serviceWorker from './serviceWorker';
+import './index.scss';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
     <Provider store={configureStore()}>

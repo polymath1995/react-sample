@@ -9,7 +9,17 @@ function defaultFunction(state = 'start', action) {
    }
 }
 
+function portfolios(state = [], action) {
+  switch (action.type) {
+    case 'PORTFOLIO_DATA':
+      return action.payload
+    default:
+     return state
+   }
+}
+
 
 export default combineReducers({
-  defaultFunction
+  defaultFunction,
+  portfolios
 });
