@@ -2,11 +2,15 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import { simpleAction } from '../actions/actions'
-import './App.css';
+import './App.scss';
 
 class Dashboard extends Component {
+  constructor(props){
+    super(props);
+    this.simpleAction=this.simpleAction.bind(this);
+  }
   
-  simpleAction = (event) => {
+  simpleAction(event) {
     this.props.simpleAction();
   }
 
