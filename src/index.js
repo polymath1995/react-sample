@@ -11,7 +11,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
     <Provider store={configureStore()}>
-        <HashRouter>
+        <HashRouter basename="/polymath1995.github.io/">
             <Switch>
                 <Route exact path='/' component={App}/>
                 <Route path='/detail' component={DetailPage}/>
