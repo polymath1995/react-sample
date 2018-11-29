@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import BootstrapTable from 'react-bootstrap-table-next';
 import cellEditFactory, { Type } from 'react-bootstrap-table2-editor';
-import { simpleAction, initPorfolioData } from '../actions/actions'
+import { simpleAction, initPorfolioData } from '../actions/actions';
+import { Portfolios as PortfoliosData } from '../portfolios';
 import './App.scss';
 
 class Dashboard extends Component {
@@ -18,15 +19,27 @@ class Dashboard extends Component {
     this.setNewWeightsToPortFolio=this.setNewWeightsToPortFolio.bind(this);
     this.setPortFolioDataDetails=this.setPortFolioDataDetails.bind(this);
   }
-
-  componentDidMount() {
-    this.setPortFolioDataDetails();
+    
+  componentWillMount() {
+    const { portfolios } = this.props;
+    if (portfolios.length === 0) {
+      this.props.initPorfolioData(PortfoliosData);
+    }
   }
 
-  setPortFolioDataDetails() {
-    const { portfolios } = this.props;
+  componentWillReceiveProps(nextProps) {
+    if(nextProps.portfolios !== this.props.portfolios) {
+      this.setPortFolioDataDetails(nextProps.portfolios);
+    }
+  }
+
+  componentDidMount() {
+    this.setPortFolioDataDetails(this.props.portfolios);
+  }
+
+  setPortFolioDataDetails(portfolios) {
     const { search } = this.props.location;
-    if (search) {
+    if (portfolios && portfolios.length !== 0 && search) {
       const id = search.split('?id=')[1];
       this.setState({ id });
       const constituents = portfolios.find(folio => folio.id === Number(id)).constituents;
