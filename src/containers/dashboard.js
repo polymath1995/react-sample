@@ -40,23 +40,23 @@ class Dashboard extends Component {
                         <span className="left"> Volatility </span>
                         <span className="right"> {folio.volatility} </span>
                       </li>
-                      <li class="list-group-item">
+                      <li class="list-group-item list-value">
                         <span className="left"> 1 Month Return </span>
                         <span className="right">
                          2.34% <span class="glyphicon glyphicon-triangle-top" aria-hidden="true"></span>
                         </span>
                       </li>
-                      <li class="list-group-item">
+                      <li class="list-group-item list-value">
                         <span className="left"> Mean Return </span>
                         <span className="right"> {folio.mean_return} </span>
                       </li>
-                      <li class="list-group-item">
+                      <li class="list-group-item list-value">
                         <span className="left"> Minimum Investment </span>
                         <span className="right">
                          <span style={{ fontSize: 'x-small' }}>{folio.currency}</span> 3,000
                         </span>
                       </li>
-                      <li class="list-group-item">
+                      <li class="list-group-item list-value">
                         <span className="left"> Eligibility </span>
                         <span className="right"> Restricted to accredited investors </span>
                       </li>

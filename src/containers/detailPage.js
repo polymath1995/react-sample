@@ -147,19 +147,15 @@ class Dashboard extends Component {
       text: 'Name',
       editable: false,
     }, {
-      dataField: 'weight',
-      text: 'Weight',
-      editable: false,
-    }, {
       dataField: 'isLocked',
-      text: 'Lock',
+      text: 'Lock (Click to edit)',
       editor: {
         type: Type.CHECKBOX,
         value: 'Y:N'
       }
     }, {
       dataField: 'weight',
-      text: 'Editable Weight \n (Click to edit and press enter to save)',
+      text: 'Weight (Click to edit and press enter to save)',
       validator: (newValue, row, column) => {
         if (isNaN(newValue)) {
           return {
@@ -187,7 +183,7 @@ class Dashboard extends Component {
       <div className="App">
         <header className="App-header2">
           <NavLink to='/'> <button style={{ margin: 10 }}> Go back to List page </button> </NavLink> <br />
-          <div style={{ width: '70%' }}>
+          <div style={{ width: '100%', padding: 20 }}>
             <BootstrapTable keyField="type" data={ tableData } columns={ columns } expandRow={ expandRow } />
           </div>
         </header>
