@@ -32,11 +32,11 @@ class Dashboard extends Component {
             <div class="row" style={{ padding: 10, width: '100%' }}>
               <div class="col-sm-6 col-md-4">
                 <div class="thumbnail">
-                  <img className="pf-image" src="http://static.asiawebdirect.com/m/phuket/portals/hong-kong-hotels-ws/homepage/nightlife/pagePropertiesImage/hong-kong-nightlife.jpg.jpg" alt="..."/>>
+                  <img className="pf-image" src="http://static.asiawebdirect.com/m/phuket/portals/hong-kong-hotels-ws/homepage/nightlife/pagePropertiesImage/hong-kong-nightlife.jpg.jpg" alt="..."/>
                   <div class="caption">
                     <h3>{folio.name}</h3>
                     <ul class="list-group font">
-                      <li class="list-group-item">
+                      <li class="list-group-item list-value">
                         <span className="left"> Volatility </span>
                         <span className="right"> {folio.volatility} </span>
                       </li>

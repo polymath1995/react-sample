@@ -84,7 +84,7 @@ class Dashboard extends Component {
         portfolios.find(folio => folio.id === Number(id)).constituents
         .find(data => data.instrument.id === row.id).isLocked = newValue === "Y";
         this.props.initPorfolioData(portfolios);
-        this.setPortFolioDataDetails();
+        this.setPortFolioDataDetails(portfolios);
       } else {
         const wholeData = constituents.map(data => {
           var obj = {};
@@ -122,11 +122,11 @@ class Dashboard extends Component {
     portfolios.find(folio => folio.id === Number(this.state.id)).constituents.forEach(data => {
       if (!data.isLocked) {
         const newWeight = wholeData.find(x => x.id === data.instrument.id).newWeight;
-        data.weight = parseFloat(newWeight).toFixed(2);
+        data.weight = Number(parseFloat(newWeight).toFixed(2));
       }
     });
     this.props.initPorfolioData(portfolios);
-    this.setPortFolioDataDetails();
+    this.setPortFolioDataDetails(portfolios);
   }
   
   simpleAction(event) {
