@@ -1,15 +1,15 @@
 {
-  "main.css": "/we-invest/static/css/main.3cf39e00.chunk.css",
-  "main.js": "/we-invest/static/js/main.afdf5706.chunk.js",
-  "main.js.map": "/we-invest/static/js/main.afdf5706.chunk.js.map",
+  "main.css": "/we-invest/static/css/main.c28e64f8.chunk.css",
+  "main.js": "/we-invest/static/js/main.aca4b578.chunk.js",
+  "main.js.map": "/we-invest/static/js/main.aca4b578.chunk.js.map",
   "static/css/1.6d1c3830.chunk.css": "/we-invest/static/css/1.6d1c3830.chunk.css",
   "static/js/1.8bc24998.chunk.js": "/we-invest/static/js/1.8bc24998.chunk.js",
   "static/js/1.8bc24998.chunk.js.map": "/we-invest/static/js/1.8bc24998.chunk.js.map",
   "runtime~main.js": "/we-invest/static/js/runtime~main.f647cabf.js",
   "runtime~main.js.map": "/we-invest/static/js/runtime~main.f647cabf.js.map",
   "static/css/1.6d1c3830.chunk.css.map": "/we-invest/static/css/1.6d1c3830.chunk.css.map",
-  "static/css/main.3cf39e00.chunk.css.map": "/we-invest/static/css/main.3cf39e00.chunk.css.map",
+  "static/css/main.c28e64f8.chunk.css.map": "/we-invest/static/css/main.c28e64f8.chunk.css.map",
   "index.html": "/we-invest/index.html",
-  "precache-manifest.5a3de52aaf99065b3ec641c3a7efad82.js": "/we-invest/precache-manifest.5a3de52aaf99065b3ec641c3a7efad82.js",
+  "precache-manifest.63a9a8fc2250216b2d47f09d56a42f9c.js": "/we-invest/precache-manifest.63a9a8fc2250216b2d47f09d56a42f9c.js",
   "service-worker.js": "/we-invest/service-worker.js"
 }
