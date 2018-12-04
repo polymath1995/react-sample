@@ -58,7 +58,7 @@ class Dashboard extends Component {
                       </li>
                       <li class="list-group-item list-value">
                         <span className="left"> Eligibility </span>
-                        <span className="right"> Restricted to accredited investors </span>
+                        <span className="right"> Accredited investors only </span>
                       </li>
                     </ul>
                       <NavLink to={`/detail?id=${folio.id}`}>
