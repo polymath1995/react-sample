@@ -77,6 +77,11 @@ class Dashboard extends Component {
     var { portfolios } = this.props;
     const isValueIncreased = oldValue < newValue;
     const { search } = this.props.location;
+    if (column.dataField === 'weight' && row.isLocked) {
+      this.props.initPorfolioData(portfolios);
+      this.setPortFolioDataDetails(portfolios);
+      return;
+    }
     if (search) {
       const id = search.split('?id=')[1];
       const constituents = portfolios.find(folio => folio.id === Number(id)).constituents;
