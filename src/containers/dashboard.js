@@ -34,7 +34,7 @@ class Dashboard extends Component {
                 <div class="thumbnail">
                   <img className="pf-image" src="http://static.asiawebdirect.com/m/phuket/portals/hong-kong-hotels-ws/homepage/nightlife/pagePropertiesImage/hong-kong-nightlife.jpg.jpg" alt="..."/>
                   <div class="caption">
-                    <h3>{folio.name}</h3>
+                    <h3 style={{ color: 'black' }}>{folio.name}</h3>
                     <ul class="list-group font">
                       <li class="list-group-item list-value">
                         <span className="left"> Volatility </span>
@@ -61,6 +61,7 @@ class Dashboard extends Component {
                         <span className="right"> Accredited investors only </span>
                       </li>
                     </ul>
+                    <br />
                       <NavLink to={`/detail?id=${folio.id}`}>
                         <Button bsStyle="primary" className="go-to-detail-button"> Explore Investment Idea </Button>
                       </NavLink>
