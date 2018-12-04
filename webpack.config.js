@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 
-module.exports = {
+const data = {
     entry: './src/index.js',
     module: {
         rules: [
@@ -23,11 +23,15 @@ module.exports = {
       publicPath: '/',
       filename: 'bundle.js'
     },
-    plugins: [
-      new webpack.HotModuleReplacementPlugin()
-    ],
     devServer: {
       contentBase: './dist',
       hot: true
     }
   };
+
+  if (process.env.NODE_ENV !== 'production') {
+    data.plugins = [
+      new webpack.HotModuleReplacementPlugin()
+    ];
+  }
+module.exports = data;
