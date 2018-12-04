@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/we-invest/static/js/runtime~main.f647cabf.js"
   },
   {
-    "revision": "69df1acbd60ca821f158",
-    "url": "/we-invest/static/js/main.69df1acb.chunk.js"
+    "revision": "fa933b7797c360ea7484",
+    "url": "/we-invest/static/js/main.fa933b77.chunk.js"
   },
   {
     "revision": "8bc24998e9331454d5db",
     "url": "/we-invest/static/js/1.8bc24998.chunk.js"
   },
   {
-    "revision": "69df1acbd60ca821f158",
+    "revision": "fa933b7797c360ea7484",
     "url": "/we-invest/static/css/main.3cf39e00.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/we-invest/static/css/1.6d1c3830.chunk.css"
   },
   {
-    "revision": "800443f2ab49ebb86c04dcb1e1978e4e",
+    "revision": "d15553b35ae038db95815afb627308a1",
     "url": "/we-invest/index.html"
   }
 ];

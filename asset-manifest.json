@@ -1,7 +1,7 @@
 {
   "main.css": "/we-invest/static/css/main.3cf39e00.chunk.css",
-  "main.js": "/we-invest/static/js/main.69df1acb.chunk.js",
-  "main.js.map": "/we-invest/static/js/main.69df1acb.chunk.js.map",
+  "main.js": "/we-invest/static/js/main.fa933b77.chunk.js",
+  "main.js.map": "/we-invest/static/js/main.fa933b77.chunk.js.map",
   "static/css/1.6d1c3830.chunk.css": "/we-invest/static/css/1.6d1c3830.chunk.css",
   "static/js/1.8bc24998.chunk.js": "/we-invest/static/js/1.8bc24998.chunk.js",
   "static/js/1.8bc24998.chunk.js.map": "/we-invest/static/js/1.8bc24998.chunk.js.map",
@@ -10,6 +10,6 @@
   "static/css/main.3cf39e00.chunk.css.map": "/we-invest/static/css/main.3cf39e00.chunk.css.map",
   "static/css/1.6d1c3830.chunk.css.map": "/we-invest/static/css/1.6d1c3830.chunk.css.map",
   "index.html": "/we-invest/index.html",
-  "precache-manifest.97a620b6d62916fbc82e202493691437.js": "/we-invest/precache-manifest.97a620b6d62916fbc82e202493691437.js",
+  "precache-manifest.adade8a34c52c29ebcb5a9d0cea447f7.js": "/we-invest/precache-manifest.adade8a34c52c29ebcb5a9d0cea447f7.js",
   "service-worker.js": "/we-invest/service-worker.js"
 }
